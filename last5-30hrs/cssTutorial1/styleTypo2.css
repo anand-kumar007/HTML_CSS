@@ -1,0 +1,39 @@
+/* font-weight and font-style */
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    /* font-weight: lighter; */
+    font-style: italic;
+    text-align: center;
+}
+
+.main{
+    font-family: cursive;
+    font-weight: bold;
+    
+    
+}
+
+.subheading{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 230;
+}
+
+.one{
+ font-style: normal;
+ text-align: left;
+ text-indent: 3em;
+}
+
+.two{
+    font-style: italic;
+}
+
+
+/* normal font-style comes by default 
+and hence chosen accordingly.*/
+
+
+/* text-align and text-indent */
+
+/* text-align will set the alignment of the text    left alignment is the preset for browsers. */

@@ -1,0 +1,64 @@
+div{
+    height: 400px;
+    color: red; 
+}
+
+.big-Img{
+    background: url(./big.jpg);
+    background-repeat: round;
+    /* round says use integer multiple of image according to screen size no halfway etc. */
+
+    background-size: cover;
+    /* will cover the whole div if the size of img is less its qulaity gonna suffer so be sure and it is widely used while making the projects and all bcz we use with the banners and all */
+
+    /*  for the background-position  */
+    background-size: cover ;
+    background-repeat: repeat;
+    background-position: center;
+
+}
+
+.small-Img{
+    background: url(./small.jpg);
+    background-repeat: repeat;
+    background-repeat: no-repeat;
+    background-repeat: repeat-x;
+    background-repeat: repeat-y;
+    background-repeat: space;
+    background-repeat: round;
+    
+ /* background-size: cover; */
+
+ /* for the background-position
+  delete the backgroun-size :  
+*/
+ background-repeat: no-repeat;
+ /* background-position: center;
+ background-position: bottom;
+ background-position: left;
+ background-position: right;
+ background-position: top; */
+
+ background-position: 20% 30%;
+ /* with x-axis and y-axis */
+
+
+
+ 
+
+
+
+
+}
+
+.folder-Img{
+    border: 2px solid black;
+    background: url(./Img/folder-Img.jpg);
+    background-repeat: round;
+    background-size: contain;
+    /* contain would preserve the width and height ratio of img */
+    background-repeat: no-repeat;
+
+}
+
+/* look the the images by default will have repeating behaviour */

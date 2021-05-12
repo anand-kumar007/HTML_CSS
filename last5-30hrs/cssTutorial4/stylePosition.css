@@ -1,0 +1,44 @@
+div{
+    border: 3px solid red;
+    background: yellowgreen;
+    margin-top: 40px;
+}
+
+.one{
+    background: blue;
+    
+    position: relative;
+    top: 20px;
+    left: 10em;
+    bottom: 20em;
+    right: 50%;
+    /* pushing it 20px from top from its original value */
+}
+
+.two{
+    background: green;
+
+}
+
+.special{
+    background: aqua;
+    font-size: 20px;
+    /* sets its relative to parent which is relative if no have relative than it will set itself reltive to the body */
+    position:absolute;
+    top: 0;
+    right: 0;
+}
+
+/* static is the default the behaviour of position for all.
+
+used when position for parent then for something to be normal behaviour we'll make the position static for that something*/
+
+button{
+    color : white;
+    font-size: 30px;
+    background: green;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    /* that button would be fixed relative to something that is body in this case.*/
+}

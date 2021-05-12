@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise3</title>
+</head>
+
+
+<body>
+
+    <h3>Links in html</h3>
+    <p>Use the mailto: scheme inside the href attribute
+        to create a link that opens the user's email program
+    </p>
+    <a href="mailto:someone@example.com">send mail</a>
+
+
+    <h3>images</h3>
+    <p>use alt for images bcz screen recorder will read the
+        alt text not the images.</p>
+    <p>for setting the width of images either style them and
+        give responsive width and height or </p>
+    <p>use width and height attribute of img tag but they always
+        take value in pixels so not useful much</p>
+    <li>widht="300" height="800"</li>
+
+
+    <h3>animated images</h3>
+    <p>html allows to add animated gif just give the extension of gif</p>
+
+    <img src="https://lh3.googleusercontent.com/proxy/AM7sTk5X3bN
+    WQD5JJd_iTWnfFp0ydt3YtQ7tb9XJktZ8RhohQNFjNUe9VPFcEk
+    dMGisWLs3a9o51xEsQgd5A_gmBEG1s3vk" alt="gif " width="100" height="100">
+
+
+    <h3>image map</h3>
+    <p>you can use usemap="#wowo" and then define the various
+        areas and coordinate and where each of them takes to the
+        user in order on clicking different areas in the image</p>
+    <p>
+        <img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+
+        <map name="workmap">
+            <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+            <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+            <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+        </map>
+    </p>
+
+
+    <h1>The picture element</h1>
+    <p>Defines a container for multiple image resources</p>
+    <p>inside the pictue tag one img tag and many source tag</p>
+
+    <p>Resize the browser window to load different images.</p>
+
+    <picture>
+        <source media="(min-width:650px)" srcset="https://images.pexels.com/photos
+        /992734/pexels-photo-992734.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
+
+        <source media="(min-width:465px)" srcset="https://images.pexels.com/photos/
+        4622976/pexels-photo-4622976.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
+
+        <img src="https://images.pexels.com/photos/60909/rose-yellow-flower-petals-
+        60909.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="Flowers" style="width:50%;">
+    </picture>
+
+
+    <div>When to use the Picture Element There are two main purposes
+        for the <picture> element:
+
+            <h3>1.Bandwidth</h3>
+            If you have a small screen or device, it is not necessary to
+            load a large image file. The browser will use the first
+            <source> element with matching attribute values, and ignore
+            any of the following elements.
+
+            <h3>2. Format Support</h3>
+            Some browsers or devices may not support all image formats.
+            By using the <picture> element, you can add images of
+                all formats, and the browser will use the first format it recognizes,
+                and ignore any of the following elements.
+    </div>
+
+
+    <h2>A Description List</h2>
+    <dl>
+        <dt>Coffee</dt>
+        <dd>- black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>- white cold drink</dd>
+    </dl>
+
+
+    <h3>Html block and inline element</h3>
+    <p>Every HTML element has a default display value,
+        depending on what type of element it is.
+        <br>There are two display values: block and inline.
+    </p>
+
+
+    <h4>block level elements</h4>
+    <p>A block-level element always starts on a new line.
+        <br>A block-level element always takes up the full width
+        available (stretches out to the left and right as far as it can).
+        <br>A block level element has a top and a bottom margin,
+        whereas an inline element does not.
+    </p>
+
+
+    <h2>-------</h2>
+    <dl>
+        <dt>block</dt>
+        <dd>block: top bottom margin respected</dd>
+        <dt>inline</dt>
+        <dd>Inline : top bottom margin not respected.</dd>
+    </dl>
+
+
+    <h3>example of block level element</h3>
+
+    <p>"paragraph,table"
+        <br>"div","form", "h1-h6","header and footer"
+        <br>"address", ,"pre section blockquote nav canvas aside",
+        <br>"figure, figurecaption"
+        <br>"List"
+    </p>
+
+
+    <h3>inline element</h3>
+
+    <p>"images","span"
+        <br>
+        "buttons","links(a)","texarea,acronym,sub,sup etc"
+    </p>
+
+
+    <h3>Html Iframes</h3>
+
+    <p>The HTML iframe tag specifies an inline frame.
+        <br>An inline frame is used to embed another document
+        within the current HTML document.
+        <br>
+    <dl>
+        <dt>Syntax</dt>
+        <dd>" iframe src="url" title="description" "</dd>
+    </dl>
+    </p>
+
+</body>
+
+</html>

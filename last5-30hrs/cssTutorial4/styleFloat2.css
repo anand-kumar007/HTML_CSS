@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div{
+    float: left;
+    height: 400px;
+    width: 33.33%;
+}
+.one{    
+    background: red;
+}
+.two{
+    background: blue;
+}
+
+.three{
+    background: green;
+}
+
+h1{
+    clear: both;
+}
+
+/* whenever you're using float we generally work with clear for the next coming item */

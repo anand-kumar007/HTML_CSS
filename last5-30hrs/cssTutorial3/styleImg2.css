@@ -1,0 +1,54 @@
+/* background-attachment */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div{
+    min-height: 100vh;
+    color: red; 
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+}
+
+.big-Img{
+    background: url(./big.jpg);
+    
+   
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+     background-attachment: fixed;
+
+
+}
+
+.small-Img{
+  background: url(./Img/folder-Img.jpg);
+
+ background-size: cover;
+ background-repeat: no-repeat;    background-position: center;
+
+ background-attachment: fixed;
+ /* image will be fixed only text on it etc. would be moving */
+
+
+}
+
+.folder-Img{
+    border: 2px solid black;
+    background: url(./big.jpg);
+
+    background-size: cover;
+    background-repeat: no-repeat;    background-position: center;
+     background-attachment: fixed;
+
+
+
+}
+

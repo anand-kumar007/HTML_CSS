@@ -1,0 +1,27 @@
+/* font-size and font-family */
+body{
+    font-family: Helvetica ;
+} 
+h1{
+    font-family:monospace;
+}
+
+/* font-stack generic family 
+
+ if browser doesn't supports one font family then it can go for the other one present in the font-stack and carry out the task.(font-stack)
+ 
+  the third one is the generic family means if first two are not supported then choose something like this and apply to our fonts.
+ 
+ */
+
+ ul{
+     font-family: 'Times New Roman', Times, serif;
+     font-family: cursive;
+ }
+
+
+ /* we are not limited to choosing our font-family from here rather we can choose fonts from the google and use them in our projects. */
+
+ p{
+     font-family: 'Itim', cursive;
+ }

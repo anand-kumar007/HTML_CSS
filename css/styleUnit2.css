@@ -1,0 +1,36 @@
+/* 
+ vh - height - percent of the screen
+ vw - width - percent of the screen
+
+depending on the dimension of screen the would change their values.
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.banner{
+    width: 50vw;
+    height: 50vh;
+    background: red;
+}
+
+.header{
+    width: 100vw;
+    /* height: 100vh; */
+    height: calc(100vh - 50vh);
+    background: gray ;
+}
+
+/* this is the cool thing about vw and vh units directly instead of working with percent etcetra we deals with the screen size and stuffs.
+ */
+
+ /* calc() function is used to perfrom math operations like +,-,*,/ 
+ like nav bar and banner should combinly occupies 100%
+ then lets say navbar 100px
+ then we can give banner calc(100vh - 100px) 
+ this would serve our purpose.
+ 
+ */

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise1</title>
+</head>
+
+
+<body>
+
+
+    <h2>Hey there </h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto 
+        quidem modi veniam optio! Facilis, nihil necessitatibus dicta 
+        accusamus corporis minus error eveniet consectetur perspiciatis, 
+        aliquam eos repellendus? Amet, officiis repudiandae!</p>
+    <hr>
+
+
+    <p id="para">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, autem?
+    </p>
+    <hr>
+
+
+    <p> pre: The Preformatted Text element. The HTML pre: element represents preformatted text 
+        which is to be presented exactly as written in the HTML file. The text is typically 
+        rendered using a non-proportional ("monospace") font. Whitespace inside this element 
+        is displayed as written
+    </p>
+    
+
+
+    <p>The del: element represents a removal from the document. The s: represents contents 
+       that are no longer accurate or no longer relevant
+    </p>
+
+
+    <h3>Wrap this "poem" <s>around</s> HTML <del>tags</del> that will preserve all 
+        spaces and linebreaks when the element is displayed.</h3>
+    <pre>
+    My Bonnie lies over the ocean.
+    
+    My Bonnie lies over the sea.
+    
+    My Bonnie lies over the ocean.
+    
+    Oh, bring back my Bonnie to me.
+    </pre>
+
+
+    <hr>
+    Use an HTML element to "add" quotation marks around the letters "cool".
+    <p>I am so<q>cool</q>  
+    </p>
+    <hr>
+
+
+    The text below should be a quoted section.
+    <h1>Blockquote and CSS</h1>
+    <p>Use CSS to remove the indentation from the blockquote element.</p>
+    
+    <p>Here is a quote from WWF's website:</p>
+    
+    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+        For 50 years, WWF has been protecting the future of nature. 
+        The world's leading conservation organization, WWF works
+        in 100 countries and is supported by 1.2 million members in 
+        the United States and close to 5 million globally.
+    </blockquote>
+
+    <p>
+        Change text direction.
+        Make the text below go right-to-left.
+        <br>
+
+        <bdo dir="rtl">What a beautiful day!</bdo>
+    </p>
+    <p>BDO stands for Bi-Directional Override.
+       The "bdo" tag is used to override the current text direction.
+       <hr>
+        ltr
+        rtl Required. Specifies the text direction of the text inside the "bdo" element
+    </p>
+    
+
+    <hr>
+    <h1>The abbr element</h1>
+    <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+    
+    
+    <hr>
+    <p>
+    The "address" tag defines the contact information for the 
+    author/owner of a document or an article.
+    The contact information can be an email address, 
+    URL, physical address, phone number, social media handle, etc.
+    The text in the "address" element usually renders in italic, and 
+    browsers will always add a line break before and after the "address" element.
+    </p>
+
+
+    <h1>The address element</h1>
+    <address>
+        Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br>
+        Visit us at:<br>
+        Example.com<br>
+        Box 564, Disneyland<br>
+        USA
+    </address>
+
+
+    <h2>Table Caption element</h2>
+    <table style=" border: 1px solid black; width: 300px;">
+        <caption>Hey I am the Caption</caption>
+        <tr>
+            <th>Month</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>January</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>February</td>
+            <td>$50</td>
+        </tr>
+        <tr>
+            <th colspan="2">Name</th>
+           
+        </tr>
+    </table>
+
+
+    <h2>Unorderes List with square style</h2>
+    <ul style="list-style-type: square;">
+        <li>10</li>
+        <li>20</li>
+        <li>30</li>
+    </ul>
+
+
+    <h2>Ordered list with stating with  A etc. ie. type="A"</h2>
+    <ol type="A">
+        <li>100</li>
+        <li>200</li>
+        <li>300</li>
+    </ol>
+
+
+    <h3>second order list with type uppercase roman letters i.e type="I"</h3>
+    <ol type="I">
+        <li>AAA</li>
+        <li>CCC</li>
+        <li>BBB</li>
+    </ol>
+
+
+    <h2>The Description list</h2>
+    <p>The HTML "dl" element represents a description list. 
+        The element encloses a list of groups of terms (specified using the "dt" element)
+         and descriptions (provided by "dd" elements)
+    </p>
+
+    <dl>
+        <dt>Beast of Bodmin</dt>
+        <dd>A large feline inhabiting Bodmin Moor.</dd>
+    
+        <dt>Morgawr</dt>
+        <dd>A sea serpent.</dd>
+    
+        <dt>Owlman</dt>
+        <dd>A giant owl-like creature.</dd>
+    </dl>
+
+
+    <hr>
+    <h2>iframe tag</h2>
+
+    <pre style="font-size: 16px;">
+    The iframetag specifies an inline frame.
+
+    An inline frame is used to embed another document within the current HTML document.
+
+    Tip: Use CSS to style the "iframe"" (see example below).
+
+    Tip: It is a good practice to always include a title attribute for the "iframe". 
+    This is used by screen readers to read out what the content of the "iframe" is.
+    </pre>
+
+
+    <h1>The iframe element + CSS</h1>
+    <p>An iframe with a thin black border:</p>
+    <iframe src="https://www.geeksforgeeks.org/"
+     width="50%" height="300" style="border:1px solid black;">
+    </iframe>
+
+
+    <h2>setting a particular code to be Code type with the code tag </h2>
+    <p>Code example:
+       <code> var person ="Radha";
+           int i = 10;
+           cout<< i;
+       </code>
+    </p>
+    
+    <p>Code example:</p>
+    
+    <pre>
+    <code>var person = {
+      firstName:"John",
+      lastName:"Doe"
+    }</code>
+    </pre>
+    <hr>
+    <p>A simple math equation:
+        <var>
+            x
+        </var>
+        = 3 + 2;
+    </p>
+    <h2>Disabled input filed</h2>
+
+    <pre>
+        <code>
+            The disabled attribute for <input disabled> element in HTML is used 
+            to specify that the input field is disabled. A disabled input
+            is un-clickable and unusable. It is a boolean attribute. 
+            The disabled <input disabled> elements are not submitted in the form.
+        </code>
+    </pre>
+
+    <h2>Maximum length allowed in the input field can be set 
+        using maxlength attribute of input tag</h2>
+        Set the max numbers of characters allowed in the input field to 40.
+    <form >
+        <input type="text" maxlength="40"> Name of 40 length at max
+        <hr>
+        <input type="text" name="" id="" readonly>I am readonly inputfield
+    </form>
+    <hr>
+
+
+    <h2>A Nested List</h2>
+    <p>Lists can be nested (list inside list):</p>
+
+    <ul>
+        <li>Coffee</li>
+        <li>Tea
+            <ul>
+            <li>Black tea</li>
+            <li>Green tea</li>
+            </ul>
+        </li>
+        <li>Milk</li>
+    </ul>
+
+
+    <h2>for unordered list</h2>
+    <p>Use the CSS <strong>list-style-type</strong> property to 
+        define the list item marker</p>
+    <hr>
+
+
+    <h2>for ordere list</h2>
+    <p>The type attribute of the "ol" tag, defines the <strong>type</strong> 
+        of the list item marker:</p>
+</body>
+</html>

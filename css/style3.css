@@ -1,0 +1,71 @@
+h1{
+    color: red;
+}
+
+h2{
+    color: green;
+}
+
+p{
+    color: blue;
+}
+/* these were element selector */
+
+
+/* selector grouping is also applicable */
+
+h1,h2{
+    font-size: 2rem;
+}
+
+/* this will override the element selector */
+.title{
+    color: yellow;
+}
+
+/* this would ovveride the class also */
+
+#title{
+    color: rgb(230, 9, 83);
+}
+
+#footerHeading{
+    color: green;
+    background-color: black
+    
+}
+
+
+
+
+/* ID is absolutely the fastest. Part of the reason is that ID is supposed to be unique, so the API stops searching after the ID is found in the DOM. */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* external css < internal css < inline css
+    the power of css among different types
+*/
+
+/* css selectors */
+
+/* 1. element 
+2. class and id selector
+*/
+
+/* declaration and declaration block */
+/* property and value */
+

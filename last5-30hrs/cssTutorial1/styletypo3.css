@@ -1,0 +1,45 @@
+/* 
+line-height
+letter-spacing
+word-spacing
+text-transform
+text-decoration 
+*/
+
+
+.one{
+    line-height: 2.5em;
+    /* initially this would be reltive to browser */
+}
+
+.two{
+    letter-spacing: 5px;
+    /* spcae btwn each letter is set to 5 px now. */
+    text-transform: lowercase;
+    text-decoration: underline dashed green;
+    line-height: 1.3rem;
+}
+
+.three{
+    word-spacing: 20px;
+    /* self-explanatory */
+   
+    
+}
+
+h1{
+    text-transform: capitalize;
+    /* each first letter is capitalize */
+     text-decoration: overline underline red;
+}
+
+a{
+    font-size: 2rem;
+    text-decoration:  line-through red;
+
+}
+
+.subheading{
+        text-decoration: underline wavy blue;;
+
+}

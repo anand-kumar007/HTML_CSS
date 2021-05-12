@@ -1,0 +1,48 @@
+/* Inheritance in css */
+
+/* child will inherit all property of parent unless it's overidden */
+
+
+body{
+
+    font-family: monospace;
+    line-height: 1.2em;
+
+}
+
+div {
+    color: blue;
+    border:3px solid black;
+    padding: 0.5em;
+}
+
+h2{
+    color: green;
+}
+
+h2{
+    color: chocolate;
+}
+
+/* last rule , specificity, * universal selector */
+/* css would remember the last defined property __last rule*/
+
+/* specificity */
+/* class is more specific than element selector
+id is more specific than class likewise */
+
+
+/* The universal selector (*) has lowest specificity, while ID selectors are highly specific!  */
+
+.red{
+    color: red;
+}
+
+h4{
+    color: blue;
+}
+/* see the last rule is applied here thought the class has more specificity than the element selector. */
+
+*{
+    margin: 1em;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="HTML basic tutorial"/>
+  <meta name="keywords" content="HTML, html basics, html tutorials" />
+  <meta name="author" content="John Sam" />
+
+  <meta http-equiv="refresh" content="60" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>First Tutorial</title>
+</head>
+<!-- just press cmd and / -->
+
+<body>
+  <h1>Welcome</h1>
+  <a href="https://www.google.com/" target="_blank">
+  <img src="images/art.jpg" alt="" width="100px" height="100px" />
+  </a>
+  <!-- <h1>sunset image</h1>
+   <img src="./images/art.jpg"  alt="image">
+   
+   <h1>sunrise image</h1>
+
+
+
+   <img src="/images/nature.jpg"  alt="secondImg"> -->
+
+  <form>
+    <label for="fName">NAME : </label>
+    <input type="text" name="firstName" id="fName" />
+    <br /><br />
+    <label for="mailID">Email : </label>
+    <input type="email" name="mail" placeholder="john@email.com" id="mailID" />
+    <br /><br />
+    <label for="passID">Password : </label>
+    <input type="password" name="password" id="passID" value="1234" />
+    <br /><br />
+
+    <p><strong>Description</strong></p>
+    <textarea name="" id="" cols="40" rows="12"></textarea>
+    <br /><br />
+    <p>select your favourite coding language</p>
+    <input type="radio" name="r1" id="" value="C++ is favourite" />C++
+    <input type="radio" name="r1" id="" value="Java is favourite" />Java
+    <input type="radio" name="r1" id="" value="Python is favourite" />Python
+    <!-- note the value assigned to radio buttons would be submitted whenever we select any of the radio button -->
+    <br />
+    <!-- with checkboxes you can choose multiple options -->
+    <p><strong>select the categories </strong></p>
+    <input type="checkbox" name="items" id="" value="mobiles" />Mobiles
+    <input type="checkbox" name="items" id="" value="cars" /> cars
+    <input type="checkbox" name="items" id="" c checked value="clothes" />clothes <br /><br />
+    <!-- a dropdown kind of thing -->
+    <select name="year" id="">
+      <option value="1st year">1st</option>
+
+      <option value="2nd year">2nd</option>
+      <option value="3rd year">3rd</option>
+      <option value="4th year">4th</option>
+    </select>
+    <br /><br />
+    <input type="submit" id="submit" />
+  </form>
+  <!-- note that id is used for labelling while the name is used to get the value 
+   similarly value is just to provide the hardcoded value so that we can edit it something like place holder only-->
+</body>
+
+</html>

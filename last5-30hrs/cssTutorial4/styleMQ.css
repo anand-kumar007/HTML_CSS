@@ -1,0 +1,52 @@
+/* Media Queries
+Responsive Design
+Style Elements On different screen sizes
+min-width --- starting from
+max-width --- up to
+
+Mobile first than desktop versions we'll see
+*/
+
+
+
+body{
+    background: yellow;
+}
+
+.banner{
+    background: blue;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+
+@media screen and (min-width : 576px) {
+    /* starting from 576px there is going to be this rule 
+    override these things and keep the rest from the previous specified rules*/
+ 
+    body{ 
+        background: gray;
+    }
+}
+
+@media screen and (min-width : 780px) {
+ 
+    body{ 
+        background: green;
+    }
+
+    .banner{
+        background-color: brown;
+    }
+
+    h1{
+        text-transform: uppercase;
+    }
+}
+
+
+/* if we use max-width that means don't use the default specified style upto thismuch pls override upto thismuch with what i am defining here. */

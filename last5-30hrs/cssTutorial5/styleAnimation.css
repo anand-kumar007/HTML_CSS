@@ -1,0 +1,93 @@
+/*  
+Transiton 0-100% always but
+Animation 0-1% 2% ..... 100% 
+
+*/
+
+div{
+    width: 150px;
+    height: 100px;
+    
+    margin: 10px;
+} 
+
+.transition{
+    background: red;
+    transition: all 2s linear;
+}
+
+.transition:hover{
+    background: yellow;
+    transform: translateX(100px);
+}
+
+.animation{
+    background: blue;
+    animation-name: move;
+    animation-duration: 10s;
+    animation-iteration-count: 2; 
+}
+
+
+@keyframes move {
+    0%{
+        transform: translateX(20px);
+
+    }
+    50%{
+        transform: translateX(100px);
+        background: red;
+    }
+
+    75%{
+        transform: translateX(-100px);
+        background: yellow;
+
+    }
+     100%{
+        transform: translateX(20px);
+        background: green;
+
+    }
+}
+
+
+/* animation-fill-mode : what values are applied by the animation outside the time it is executing  */
+
+ 
+.animation2{
+    background: green;
+    animation: move2 5s 2;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes move2 {
+    0% {
+        opacity: 0;
+    }
+    25% {
+         transform: translateX(200px);
+        opacity: 0.25;
+    }
+    50% {
+         transform: translateX(-100px);
+        opacity: 1;
+    }
+    100% {
+         transform: translateX(150);
+        opacity: 0.5  ;
+    }
+ /* by now it is ending up with the opacity of 1 by default let's change it  */
+}
+/*  
+
+none	: Default value. Animation will not apply any styles to the element before or after it is executing
+
+forwards :	The element will retain the style values that is set by the last keyframe (depends on animation-direction and animation-iteration-count)
+
+backwards :   The element will get the style values that is set by the first keyframe (depends on animation-direction), and retain this during the animation-delay period
+
+both :	The animation will follow the rules for both forwards and backwards, extending the animation properties in both directions
+
+*/

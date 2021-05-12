@@ -1,0 +1,100 @@
+/* basic selectors 
+
+* , id, class, element
+*/
+/* *{
+    color: red;
+}
+
+#heading{
+    font-size: 40px;
+    text-transform: uppercase;
+    color: blue;
+}
+
+.heading{
+    font-size: 20px;
+    text-transform: capitalize;
+    color: green;
+}
+
+p{
+    letter-spacing: 10px;
+} */
+
+/* Descendant and child combinators 
+
+children can be descendant but descendant but can't be children
+
+*/
+
+/* all descendant of div are selected here */
+
+.header h1 {
+    color: green
+    ;
+} 
+/* this was more specific */
+
+div h1{
+    color: red;
+}
+
+/* only the direct child of div is selected here */
+div > h1 {
+    color : blue;
+}
+
+.header > h1 {
+    color: purple;
+}
+
+
+/* ::first-letter ::first-line pseudo element selector */
+
+p::first-letter{
+    font-size: 3em;
+}
+
+p::first-line{
+    font-weight: bold;
+}
+
+
+/* pseudo classes
+ :hover
+
+
+*/
+
+div a:hover{
+    font-size: 40px;
+    text-decoration: none;
+    color: red;
+}
+
+.header:hover {
+    background :aqua ;
+}
+
+/* :link :visited :active :hover with links these can be definde */
+
+span a:link {
+    color: aqua;
+
+}
+
+span a:visited {
+    color: red;
+}
+
+span a:active {
+    color: black;
+}
+
+span a:hover {
+    color: blue;
+
+}
+
+

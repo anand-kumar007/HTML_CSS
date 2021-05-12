@@ -1,0 +1,61 @@
+/* background-color and color */
+
+/* color names 140(total these many color names are there) */
+
+#first{
+    color: rgb(255,0,0);
+    background:aquamarine;
+}
+#second{
+    color: rgb(0,0,0);
+    background: url(https://images.pexels.com/photos/4234470/pexels-photo-4234470.png?auto=compress&cs=tinysrgb&dpr=1&w=500) 
+}
+
+/* RGB red green blue (0-255) */
+#third{
+    color: rgb(100,233,211);
+    background: rgb(92,221,0);
+}
+
+
+body{
+    background: rgba(100,23,221,0.3);
+}
+
+/* RGBA 0-1 opacity/transperancy */
+#fourth{
+    color: rgb(100,123,23);
+    background : rgba(0,0,0,0.32);
+}
+
+
+/* 
+HEX values #RRGGBB
+123456789 A(10) B(11) C(12) D(13) E(14) F(15)
+
+#FF0000 - RED 
+#00FF00 - GREEN
+#0000FF - BLUE
+
+#FFFFFF - WHITE
+
+
+
+
+
+HEX gives much more values than rgb bcz more letters.
+*/
+
+#fifth{
+    color: #000fff;
+}
+
+#sixth{
+    color: #00ffff;
+    background: #e70c0c;
+}
+
+#seventh{
+    color: #fff;
+    background: #0f0f0f;
+}

@@ -1,0 +1,45 @@
+/* 
+Default display property 
+Block : always starts a new line and takes full width
+
+Inline : doesn't start new line and take up as 
+         much as content space.
+*/
+
+body{
+    text-align: center;
+
+}
+.block{
+    background:blue;
+    color: white;
+    width: 20rem;
+    /* text-align: center; */
+    margin: 40px auto;
+}
+
+.inline{
+    background: red;
+    color: white;
+    
+    
+}
+
+/* 
+all elements have some default display property which we can change according to our need.
+*/
+
+/* Horizontal centering 
+
+text-align : center;
+--> would center the inline items but only the text of block elements would be centerd.
+
+so what we can do is for centering the block elements
+
+give some width to block elements then.
+
+margin : __  auto ; this would horizontally center the block elements.
+
+
+
+*/

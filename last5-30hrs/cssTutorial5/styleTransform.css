@@ -1,0 +1,80 @@
+/* transform : tanslate(), scale(), rotate(),skew() */
+div{
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+}
+
+.one{
+    background: red;
+    transform: translateX(10px);
+    transform: translateX(30%);
+
+    /* means 50% of its parent here its 150px */
+    transform: scaleX(0.5);
+    /* in x direction element is shrinking to half trimming will happen from the both sides. */
+    transform: scale(0.5,0.5);
+
+    transform: skewX(10deg);
+}
+
+.two{
+    background: green;
+    transform: translateY(-30px);
+    transform: rotateZ(45deg);
+    transform: rotate(45deg);
+    /* both of these things means the same explicityly no need to mention the Z */
+    transform: skewY(10deg);
+
+}
+
+.three{
+    background: blue;
+    transform: translate(20px,30px);
+    /* hard to see */
+    /* transform: rotateX(90deg); */
+    transform: rotateY(58deg );
+    transform : skew(10deg,20deg);
+
+    /* transition-property: background,border-radius;
+    transition-duration: 2s;
+    transition-delay: 2s; */
+
+    /* shorthand */
+    /* property,duration,how,dealy */
+    /* transition: background 3s 1s , border-radius 2s 2s ; */
+
+    transition: all 3s linear 1s;
+    /* on hovering two things are changing that means all includes two things here */
+ 
+}
+ 
+
+/* transition : change over time
+   transition-property:
+   transition-duration:
+*/
+
+div:hover {
+    background: coral;
+    /* instanltly the color changes */
+}
+
+
+.three:hover{
+    border-radius : 50%;
+}
+
+
+/* how tranisiton takes place 
+ tranisiton-timing-function :
+ transition: all 3s here 5s;
+ ease = default
+
+ ease = slow start, fast , slow end
+ linear = same speed strat to end
+ ease-in = slow start
+ ease-out = slow end
+ ease-in-out = slow start,fast, slow end
+
+*/

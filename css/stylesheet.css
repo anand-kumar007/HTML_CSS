@@ -1,0 +1,34 @@
+form{
+    background-color: grey;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    width: 50%;
+}
+
+input{
+    margin: 0 2rem;
+    border-radius: 0.4rem;
+    padding: 0.5rem;
+}
+
+textarea{
+    resize: none;
+    padding: 1rem;
+    border-radius: 0.4rem;
+    
+}
+
+#post{
+    border-radius: 1rem;
+    
+    padding: 0.5rem;
+    background-color: aqua;
+    box-shadow: 5px 5px 3px;
+}
+
+/* css last rule */
+/* selector */
+/* declaration block */
+/* declaration */
+/* property : value */
+

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three</title>
+    <link rel="stylesheet" href="threeCss.css">
+</head>
+<body>
+    <h2>Width and height of element</h2>
+    <p style="white-space: nowrap;">
+       When you set the width and height properties    of an element with CSS,
+
+       you just set the width and height of the content area.
+
+       To calculate the full size of an element, you must also add padding, 
+       borders and margins.
+    </p>
+    <p>
+        This "div" element will have a total width of 350px:
+        <br>
+        <code style="font-weight: bold;" >
+            div {
+            width: 320px;
+            padding: 10px;
+            border: 5px solid gray;
+            margin: 0;
+            }
+        </code>
+        <p>here is the calculation</p>
+        
+        <code>
+            320px (width)
+            + 20px (left + right padding)
+            + 10px (left + right border)
+            + 0px (left + right margin)
+            = 350px
+        </code>
+    </p>
+
+    <h3>The line-height property is used to specify the space between lines</h3>
+
+    <h2>Fonts</h2>
+    <p>
+       <strong> On computer screens, sans-serif fonts are considered easier to
+         read than serif fonts.</strong>
+    </p>
+    <pre style="font-size: 1.2em;">
+        In CSS there are five generic font families:
+        
+        Serif fonts have a small stroke at the edges of each letter. They create a sense of formality and elegance.
+
+        Sans-serif fonts have clean lines (no small strokes attached). They create a modern and minimalistic look.
+
+        Monospace fonts - here all the letters have the same fixed width. They create a mechanical look.
+        
+        Cursive fonts imitate human handwriting.
+
+        Fantasy fonts are decorative/playful fonts.
+    </pre>
+    <p>All the different font names belong to one of the generic font families.</p>
+
+    <br>
+    <pre>
+        Being able to manage the text size is important in web design. However, you should not use font size adjustments to make
+        paragraphs look like headings, or headings look like paragraphs.
+        
+        Always use the proper HTML tags, like "h1" - "h6" for headings and "p" for paragraphs.
+
+        The font-size value can be an absolute, or relative size.
+        
+        Absolute size:
+        
+        Sets the text to a specified size
+        Does not allow a user to change the text size in all browsers (bad for accessibility reasons)
+        Absolute size is useful when the physical size of the output is known
+        Relative size:
+        
+        Sets the size relative to surrounding elements
+        Allows a user to change the text size in browsers
+    </pre>
+
+    <h2>Responsive fonts</h2>
+    <p>
+        The text size can be set with a vw unit, which means the "viewport width".
+        <br>
+        That way the text size will follow the size of the browser window:
+    </p>
+</body>
+</html>

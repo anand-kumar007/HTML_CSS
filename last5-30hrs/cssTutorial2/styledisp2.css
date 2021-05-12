@@ -1,0 +1,124 @@
+/* 
+block: top bottom margin respected 
+Inline : top bottom margin not respected.
+
+__same is true for padding___
+
+ that means for inline elements the browser only applies left-right padding and margin and ignores the top-bottom ones.
+
+Mobile navbar
+list-style-type property
+descendant selector
+6 hr 48 mins
+
+
+*/
+/* *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+} */
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul li {
+    list-style-type: none;
+    /* list-style-type: decimal-leading-zero; */
+}
+/* being specific to link of li */
+ul li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  background :#0022;
+  color: red;
+  padding: 5px; 
+   /* overlapping  if only padding is given */
+  margin: 10px;
+
+  /* we saw that since links are inline elements so the browser is not respecting the padding and margin that we gave to top and bottom .
+  to avoid that we have to make the links as block elements. */
+
+  display: block;
+
+  /* either you can define your padding margin after this or before also works */
+
+}
+
+span a{
+    font-size: 30px;
+    background: red;
+    display: inline-block;
+    /* now both margin would be followed and also not starting the new line */
+    margin: 15px;
+
+}
+
+.box-1, .box-2, .box-3{
+    width: 200px;
+    height: 200px;
+    color: white;
+}
+
+.box-1{
+    background:red;
+    padding: 20px;
+    /* as soon as we added the padding the size of the box-1 increase to 240 from 200 bcz of the padding but this would create the problem while we are working with the project and will spoil the whole layout.
+    
+    just to avoid this happening we can simply restrict the size of box-1 from not exceeding the first one 200 rather all the padding and shrinked size of this box would combinely be 200 pixe*/
+    box-sizing: border-box;
+
+     
+}
+.box-2{
+    background:blue;
+    
+}
+.box-3{
+    background:green;
+    padding: 20px;
+    box-sizing: box-sizing;
+    /* that's why we add this at the universal selector. */
+    
+}
+
+
+/* 
+display : none
+opacity : 0
+visibility : none 
+*/
+.none,
+.opacity-1,.opacity-5,.opacity-0,
+.visibility
+{
+    background:aqua;
+    font-size: 25px;
+}
+
+.none{
+    display: none;
+}
+
+.opacity-1{
+    opacity: 1;  
+    /* default value (range is 0-1) */
+}
+.opacity-0{
+    opacity: 0;
+}
+.opacity-5{
+    opacity: 0.5;
+}
+
+.visibility{
+    visibility: hidden;
+}
+
+/* difference btwn display: none and visibility : hidden
+is that with display none we can't see it in developer tool and we can't select it also but this is not the case with the visibility hidden though it is also not visible but we can hover over it and select it etcetra. */
+
+
+/* display: none would totally take out that element 
+or just want to hide it simply make visibility hidden */

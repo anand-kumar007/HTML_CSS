@@ -1,0 +1,112 @@
+/* CSS Variables AKA Custom Properties 
+holds a value and reuse it
+--varName::-ms-value
+property:var(--varName)
+
+scope
+:root{} === global
+element === local
+
+any property
+
+*/
+
+/* .heading{
+    color: #f15025;
+}
+
+.text{
+    color: #32ff0e;
+}
+
+.main-text{
+    color: #1313ff;
+}
+
+.scond-heading {
+    color: #f15025;
+} */
+
+/* locally and globally  */
+
+
+/* global scope */
+:root{
+    --primaryColor: #f15025;
+    --secondaryColor : #083deb;
+    --mainTranisiton : all 0.4s linear;
+}
+
+.heading{
+    color: var(--primaryColor);
+}
+
+.second-heading{
+    color: var(--primaryColor);
+    transition: var(--mainTranisiton);
+}
+
+.second-heading:hover{
+    color: var(--secondaryColor);
+}
+
+
+/* local ones */
+
+div{
+    --primaryRed : red;
+}
+
+.main-text{
+    color:var(--primaryRed)
+}
+
+.main-heading{
+    color: var(--primaryRed);
+    /* will not work since local scope go and check out mainheading in devTool */
+}
+
+
+/* 
+ICONS 
+Font-Awesome Icons
+Free, Easy to get up running, simple syntax
+
+*/
+
+
+/* box and text shadow */
+
+
+h1{
+    text-shadow: 0px 5px 3px red;
+    text-shadow: 4px -3px 2px rgba(255, 36, 150, 1);
+    /* xvalue, yvalue blue and color */
+    /* first and second values can be manipulated to get shadow in x and y direction etc. */
+     background:linear-gradient(red,blue)
+}
+
+/* using online autoprefixer */
+h1{
+    text-shadow: 0px 5px 3px red;
+    text-shadow: 4px -3px 2px rgba(255, 36, 150, 1);
+   background:-webkit-gradient(linear,left top, left bottom,from(red),to(blue));
+   background:-o-linear-gradient(red,blue);
+   background:linear-gradient(red,blue)
+   
+}
+
+.box{
+    width: 200px;
+    height: 100px;
+    background-color: blue;
+    margin: 20px;
+    box-shadow: 3px 5px 5px green;
+   
+}
+
+.box:hover{
+     -webkit-box-shadow: -13px -9px 4px 0px rgba(255, 71, 255, 0.5);
+-moz-box-shadow:    -13px -9px 4px 0px rgba(255, 71, 255, 0.5);
+box-shadow:         -13px -9px 4px 0px rgba(255, 71, 255, 0.5);
+}

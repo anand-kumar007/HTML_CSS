@@ -1,0 +1,57 @@
+/* font-size, width,height, pixels */
+h1{
+    font-size: 40px;
+    width: 110px;
+    height: 140px;
+    background : #ff00ff;
+}
+/* pixels value are not responsive values */
+
+
+/* Relative values  percent % */
+
+.outer{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
+.inner{
+    width: 75%;
+    height: 50%;
+    background : yellowgreen;
+}
+
+/* em - relative depends on the parent
+  1em = 16px default browser style
+  1em = base value
+
+*/
+div {
+    font-size: 10px; 
+    /* now the em would follow 10px relative 
+    so 2em would be 20px */
+}
+
+.relative{
+    font-size: 2em; 
+    /* its 32 pixels bcz in browser fontsize is 1em ie 16px go and change font size of your browser */
+}
+
+.absolute{
+ font-size: 32px;
+}
+
+
+
+/* rem - relative depends on root(not on the parent element)
+like root is html tag etc.
+
+other things are same as em.
+
+  1rem = 16px default browser style
+
+*/
+
+
+
+

@@ -1,0 +1,49 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+div{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 60px;
+    color: orange;
+}
+
+
+.banner{
+    background: url('./big.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* the gradient will help us to see the text if suppose the the backImg is too brighter than the text over it will not be visible so that issue would be resolved by the gradient */
+
+.header{
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.5)),url(./big.jpg)center/cover no-repeat fixed;
+
+    /* this is the shorter way but need to remember the order so better to choose all above method as well. */
+}
+
+/* you can choose any color as overlay   here we just used the black overlay */
+
+
+.colorzilla{
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#3ee52b+47,1e5799+84 */
+background: #3ee52b; /* Old browsers */
+background: -moz-linear-gradient(-45deg,  #3ee52b 47%, #1e5799 84%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  #3ee52b 47%,#1e5799 84%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  #3ee52b 47%,#1e5799 84%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3ee52b', endColorstr='#1e5799',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
+}

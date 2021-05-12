@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise4</title>
+    <!-- base tag -->
+    <base href="https://www.w3schools.com/" target="_blank">
+</head>
+
+
+<body>
+
+    <h2>HTML Javascript</h2>
+    <p>JavaScript makes HTML pages more dynamic and interactive.</p>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+        Click me to display Date and Time.</button>
+    <p id="demo"></p>
+
+
+    <h3>HTML script tag</h3>
+    <pre style="font-family: arial;">
+    "script>" tag is used to define a client - side script(JavaScript).
+
+    The  script element either contains script statements, or it points to 
+    an external script file through the src attribute.
+    
+    Common uses for JavaScript are image manipulation, form validation, and dynamic changes of content.
+    To select an HTML element, JavaScript most often uses the document.getElementById() method.
+    </pre>
+
+    <p>JavaScript can change styles:by accessing the elements by their 
+        ids and classes.<br>JavaScript can change
+        attributes: <br>
+        like changing the source of img etc.</p>
+
+    <h3>example</h3>
+    <img id="myImage"
+        src="https://lh3.googleusercontent.com/proxy/-CzS4ADEc_CmejDbzr5xphKyM_cDU0EOJ2AjWksVWHyof3slSqF6f6Uaw1WpxawxusuRwpDs5hzm1w
+        NCdoc0-Tqo1ZC_iUCk9czcqw_d-2U0ueear0JdIBvrdWRX"
+        width="100" height="180" />
+    <p>
+        <button type="button" onclick="light(1)">Light On</button>
+        <button type="button" onclick="light(0)">Light Off</button>
+    </p>
+
+
+    <h3>------------</h3>
+    <pre style="font-family: verdana;">
+    The HTML "noscript" tag defines an alternate content to be displayed 
+    to users that have disabled scripts in their
+    browser or have a browser that doesn't support scripts:
+    </pre>
+
+
+    <div>
+        <h2>head section of page</h2>
+        <h3>The HTML "base "Element</h3>
+        <pre style="font-family: sans-serif;">
+
+        The"base" element specifies the base URL and/or target 
+        for all relative URLs in a page.
+        
+        The "base" tag must have either an href or a target attribute present, or both.
+        
+        There can only be one single
+        "base" element in a document!
+        
+        Example
+        Specify a default URL and a default target for all links on a page:
+
+       give several links and don't specify the href for some of them then
+       in that case the base tag's href will be used and base tag is defined 
+       in head section .
+    </p>
+    </div>
+
+
+    <h2>HTML LAYOUTS</h2>
+    <img src="./layoutHTML.jpg" alt="layout in html" style="width: 40%;">
+
+
+    <pre  style="font-family: verdana;">
+        If the max-width property is set to 100%, the image will scale down
+         if it has to, but never scale up to be larger than
+        its original size:
+    </pre>
+
+
+        <h4>1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.</h4>
+
+
+        <h3>checkout HTML style guide in W3Schools</h3>
+
+        <h2>What are emojis</h2>
+        <p>Emojis look like images, or icons, but they are not.
+        <br>They are letters (characters) from the UTF-8 (Unicode) 
+        character set.</p>
+        <h3>UTF-8 covers almost all of the characters and symbols in the world.</h3>
+
+        <p>I will display A B C</p>
+        <p>I will display &#65; &#66; &#67;</p>
+
+        <h1>My Emoji</h1>
+        <p style="font-size: 20px;">&#128512;</p>
+        <p style="font-size: 25px;">&#128525</p>
+        <p style="font-size: 30px;">&#128151</p>
+
+        <h4>Since Emojis are characters, they can be copied, displayed, 
+            and sized just like any other character in HTML.
+        </h4>
+
+        <h3>labels</h3>
+        <pre style="font-family: arial;">
+            Notice the use of the <label> element in the example above.
+            The <label> tag defines a label for many form elements.
+            
+            The <label> element is useful for screen-reader users, 
+            because the screen-reader will read out loud the label 
+            when the user focus on the input element.
+            
+            The <label> element also help users who have difficulty 
+            clicking on very small regions (such as radio
+            buttons or checkboxes) - because when the user 
+            clicks the text within the <label> element, it toggles
+            the radio button/checkbox.
+            
+            The for attribute of the <label> tag should be equal to 
+            the id attribute of the "input" element to
+            bind them together.
+        </pre>
+        <label for="one">male</label>
+        <input type="radio" name="p1" id="one">
+        <p>female is without the label so you may face difficulty
+            in clicking it.
+        </p>
+        female<input type="radio" name="p1" id="two">
+
+
+
+        <script>
+            function light(sw) {
+
+                var pic;
+                if (sw == 0) {
+                    pic = "https://lh3.googleusercontent.com/proxy/-CzS4ADEc_CmejDbzr5xphKyM_cDU0EOJ2AjWksVWHyof3slSqF6f6Uaw1WpxawxusuRwpDs5hzm1wNCdoc0-Tqo1ZC_iUCk9czcqw_d-2U0ueear0JdIBvrdWRX"
+                }
+                else {
+                    pic = "http://www.clipartbest.com/cliparts/pi5/eyK/pi5eyKLrT.gif"
+                }
+                document.getElementById('myImage').src = pic;
+            }
+
+        </script>
+
+
+        <noscript>sorry your browser doesn't support JavaScript </noscript>
+</body>
+
+</html>

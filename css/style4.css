@@ -1,0 +1,23 @@
+/* DIV and SPAN */
+
+/* both are used for grouping, div is a block element means this would create a newline while the span is an inline element */
+
+div{
+    
+    background-color: grey;
+}
+
+span{
+    color: red;
+    text-transform: capitalize;
+}
+
+.green{
+    color: green;
+}
+.red{
+    color:yellow;
+}
+
+
+
