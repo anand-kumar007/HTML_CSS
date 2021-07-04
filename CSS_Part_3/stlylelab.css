@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0px;
+    overflow: auto;
+}
+#wrapper{
+    padding: 15px;
+}
+.header{
+    height: 120px;
+    background-color: aqua;
+    border-radius: 14px;
+}
+#content{
+    margin-top: 15px;
+}
+ content ::after{
+     content: " ";
+     display: block;
+     clear: both;
+     overflow: hidden;
+ }
+#left{
+    width: 20%;
+    float: left;
+}
+#nav{
+    background-color: yellow;
+    height: 400px;
+    border-radius: 15px;
+}
+#news{
+    background-color: red;
+    height: 200px;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+#right{
+    width: 70%;
+    float: right;
+    background-color: grey;
+    height: 620px;  
+    border-radius: 15px
+}
+
+#footer{
+    height: 100px;
+    border-radius: 15px;
+    margin-top: 20px;
+    background-color: blue;
+   /* clear: both; */
+}

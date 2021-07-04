@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS ADD ONS</title>
+        <style>
+
+            .animation1{
+                background-color: aqua;
+                width: 30%; height: 30%;
+                position: relative;
+                border-color: black;
+                border-radius: 20px;
+                animation-name: an1;
+                animation-duration: 10s;
+                /* animation-delay: 5s; */
+                animation-timing-function: ease;
+                /* ease - Specifies an animation with a slow start, then fast, then end slowly (this is default)
+linear - Specifies an animation with the same speed from start to end
+ease-in - Specifies an animation with a slow start
+ease-out - Specifies an animation with a slow end
+ease-in-out - Specifies an animation with a slow start and end
+cubic-bezier(n,n,n,n) - Lets you define your own values in a cubic-bezier function
+                       */
+                animation-iteration-count: infinite;
+                animation-direction: alternate;  /* forward first then backward */
+                /* animation-play-state: inherit; */
+                animation-fill-mode: forwards;
+                /* jahan animation khatam ho rha hai whin khatam ho 
+                jana hai ya nhi is decided by this fill-mode of animation
+                */
+
+            }
+            @keyframes an1{
+                /* from{ background-color: aqua;}
+
+                to{ background-color:  yellow;} */
+                0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+            }
+            /* the tooltip elements of the animation */
+
+            .tooltip {
+    position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tp2{
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted red;
+    font-weight: bold;
+  
+ 
+
+}
+  .tp2 .tp2text{
+      /*define everthing here only 
+    and in the hover part make it visible just */
+    visibility: hidden;
+    width: 200px;
+    background-color: black;
+    color: yellow;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px 0;
+    position: absolute; /* so that it doesn't change later */
+    z-index: 1; /* defines priority of stacking  elements on over other */
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+    
+    opacity: 0;
+    transition: opacity: 1s;;
+}
+ /* getting that arrow below the tooltiptex */
+
+.tp2 .tp2text::after {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color:transparent transparent black transparent;
+}
+
+.tp2:hover .tp2text{
+    visibility: visible;
+  opacity: 1;
+}
+
+/* here tooltip part ends */
+
+.box {
+    width :50%; height: 70%;
+    background: #2db34a;
+    border-radius: 6px
+   
+    transition-property : background, border-radius;
+    transition-duration : 1s;
+    transition-timing-function: linear;
+  }
+  .box:hover {
+    background: #ff7b29;
+    border-radius: 50%;
+  }
+
+     div#div2{
+                width: 40%;
+                height: 50%;
+                background-color: blue;
+            
+                 transform: rotate(-40deg);
+                 /* transform: translate(20px,50px);  this has more priority*/ 
+                 margin: 100px 100px; 
+            }
+            #div3{
+                 width: 10%;
+                 height: 5%;
+                 background-color: yellow;
+                 transform: scale(1.4,2); /* 1.4 time of width and two times of height */
+                 margin: 100px 100px;
+            }
+            #div4{
+                width: 5%; height: 5%;
+                background-color: cornflowerblue;
+               transform: skewX(-20deg);
+                margin-left: 300px;
+            }
+            #div5{
+                width: 8% ; height: 6%;
+                background-color: gray;
+                transform: matrix(1, 0, 0.5, 1, 150, 0);
+                transform-origin: 20% 40%;
+            }
+            #div6{
+                width: 30%; height: 40%;
+                background-color: yellow;
+               transform : rotateZ(90deg);/*all are same as in 2d with some modifications */;
+                margin-left : 300px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Top Tooltip w/ Bottom Arrow</h2>
+
+<div class="tooltip" style="text-align: center;">Hover over me
+  <span class="tooltiptext">Tooltip text</span>
+</div>
+
+<br><br><br><br>
+
+<div class="tp2">hove here now
+
+    <span class="tp2text">I'm tooltiptext 2</span>
+</div>
+<br><br><br><br>
+
+
+        <h1> welcome to Animation part</h1>
+       <div  class="animation1"> 
+           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Accusantium sunt quia minima. Tempore, esse reiciendis.
+                 Provident minima fuga incidunt necessitatibus, quas sapiente 
+                 enim repellendus veritatis fugit impedit, non qui. Vel.</p>
+            </div>
+  
+            <br><br><br><br> <br><br><br><br><br><br>
+  
+
+
+
+        <h1>hello welcome to 2D transform</h1>
+        <p class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit
+            . Deserunt necessitatibus minima tempore. Ab ipsam quasi aliquid 
+            ullam neque. Quod nulla tempora, cumque inventore reiciendis dolorem 
+            fugit quaerat necessitatibus pariatur consequatur.</p>
+        <p>using the transform method.</p>
+        <div>
+            this is a div with a 2d transform property.
+            <p>ssdjs</p>
+           
+        </div>
+        <div id="div2">
+            this is a div with a 2d transform property.
+            <p>ssdjs</p>
+            <p>ssdjs</p> <p>ssdjs</p> <p>ssdjs</p> 
+        </div>
+        <div id="div3">
+            this is a div with a 2d transform property.
+            <p>ssdjs</p>
+            <p>ssdjs</p> 
+        </div>
+        <div id="div4">
+            this is a div with a 2d transform property.
+            <p>ssdjs</p>
+            <p>ssdjs</p>
+        </div>
+
+        <div id="div5">
+            The matrix() method take six parameters, containing mathematic
+            <p> functions, which allows you to rotate, scale, move (translate), and skew elements.
+            </p>
+            
+   <p>The parameters are as follow: matrix(scaleX(),skewY(),
+       skewX(),scaleY(),translateX(),translateY()) </p>
+      
+
+        </div>
+
+        <div id="div6">
+            <p>Lorem ipsum, dolor sit amet consectetur 
+                adipisicing elit. Nihil vitae a error, aperiam, 
+                esse sequi facilis ducimus odio ea ratione dolorem illo? 
+                Deserunt cupiditate officia facere quod nulla vitae harum!
+            </p>
+        </div>
+       
+    </body>
+</html>

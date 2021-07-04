@@ -1,0 +1,285 @@
+<html>
+    <head>
+        <style>
+
+            *{
+                clear: both;
+            }
+    
+    
+            body{
+                margin: 30px;
+                background-color: lightgrey;
+            }
+       /* making images center */
+       .img1{
+           display: block;
+           margin-left: auto;
+           margin-right: auto;
+       }
+       /*making it RWD */
+       .img1{
+           max-width: 100%;
+           height: auto;
+       }
+       /*playing with border size */
+       .img1{
+           border-radius: 50%;
+       }
+       /*giving border to it with some shadow and all */
+       .img1{
+           box-shadow: 5px 10px green; /* color will be inherited from text color */
+       }
+       .img2{
+           display: block;
+           margin-left: auto;
+           margin-right: auto;
+           max-width: 100%;
+           height: auto;
+           border-radius: 50%;
+           border: 1px solid black;
+           /* till here its okay */
+           padding: 5px;
+          /* first one is horizontal and second is vertical offset  
+            optional third argument is for blurring the shadow */
+          box-shadow: 5px 10px 5px red inset; 
+       }
+
+      .img3{
+           max-width: 100%;
+           height: auto;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 5px 5px ;
+            box-shadow:5px 5px 10px blue, 10px 10px 15px red, 15px 15px 10px green;
+            
+
+      }
+
+
+     div.left_img{
+        float: left;
+ transform: rotate(-8deg);
+
+ 
+     }
+
+     div.right_img{
+         float: left;
+         transform: rotate(7deg);
+    
+     }
+
+
+    div{
+ 
+  padding: 10px 10px 20px 10px;
+  border: 1px solid #BFBFBF;
+  background-color: white;
+  box-shadow: 10px 10px 5px #aaaaaa;
+}
+.  
+
+  /* form here css for button is there */
+  .button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+ 
+
+
+#ovflw1{
+    background-color: #eee;
+  width: 200px;
+  height: 50px;
+  border: 1px dotted black;
+  overflow: visible;
+  
+}
+ #ovflw2
+{
+    background-color:aqua;
+  width: 200px;
+  height: 50px;
+  border: 1px dotted black;
+  overflow: hidden;
+}
+#ovflw3
+{
+    background-color:chocolate;
+  width: 200px;
+  height: 50px;
+  border: 1px dotted black;
+  overflow: scroll;
+}
+#ovflw4
+{
+    background-color:chartreuse;
+  width: 200px;
+  height: 50px;
+  border: 1px dotted black;
+  overflow: auto;
+}
+
+  .button1{
+    background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+  font-size: 30px;
+  padding: 4px 4px;
+
+}
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+ 
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+
+.button2 {
+  background-color:blue; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  /* <button type="button" disabled>Click Me!</button>
+  
+Definition and Usage
+The disabled attribute is a boolean attribute.
+When present, it specifies that the button should be disabled.
+A disabled button is unusable and un-clickable.
+The disabled attribute can be set to keep a user from clicking on the button until some other
+condition has been met (like selecting a checkbox, etc.). 
+Then, a JavaScript could remove the disabled value, and make the button clickable again.
+ */
+}
+
+
+
+
+        </style>
+    </head>
+
+    <body>
+   <h1>About Images for CSS</h1>
+   <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" alt=img1 class="img1">
+   <br>
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr6djOcLKrXA4h_3Fk5owdY2ak8jng3tvPyg&usqp=CAU" class="img2" alt="img2">
+   <br>
+   <img src="https://images.pexels.com/photos/414102/pexels-photo-414102.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500
+   
+   " class="img3" alt="img3">
+   <br>
+   <h1 style="text-align: center;">Images Thrown On A Table</h1>
+  
+    <div class="left_img">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG_TB1R7WQQj3k8YOcqQ9zKnPYKfQyPMnj2w&usqp=CAU
+        " alt="img4" style="max-width: 100%; height: auto" >
+        <p class="caption">Cooles Image ever    </p>
+    </div>
+
+    <div class="right_img">
+        <img src="https://miro.medium.com/max/512/1*3IdVhB62IBQhXHIJTbNeVg.png
+        " alt="img5" style="max-width: 100%; height: auto">
+        <p class="caption">Neural schema painting</p>
+    </div>
+
+    <br>
+   
+    <h1>Button Styling in CSS</h1>
+
+    <ul>
+        <li>Change the font size of a button with the font-size property</li>
+        <li>Use the border-radius property to add rounded corners to a button:</li>
+
+    </ul>
+    <ol>
+        <li>Use the :hover selector to change the style of a button when you move the mouse over it.</li>
+
+           <li> Tip: Use the transition-duration property to determine the speed of the "hover" effect:</li>
+    </ol>
+
+    <button>Default Button</button>
+  <a href="#" class="button">Link Button</a>
+  <button class="button">Button</button>
+  <input type="button" class="button" value="Input Button">
+   <p>
+     The overflow property specifies whether to clip the content 
+    or to add scrollbars when the content of an element is too big to fit in the specified area.
+    <ul>
+        <li>The overflow property only works for block elements with a specified height.</li>
+        <li>The auto value is similar to scroll, but it adds scrollbars only when necessary:</li>
+        <li>Setting the value to scroll, the overflow is clipped and a scrollbar is added to scroll inside the box. Note that this will add a scrollbar both horizontally and vertically (even if you do not need it):</li>
+        <li>With the hidden value, the overflow is clipped, and the rest of the content is hidden:</li>
+        <li>By default, the overflow is visible, meaning that it is not clipped and it renders outside the element's box:</li>
+        <li>overflow-x specifies what to do with the left/right edges of the content.</li>
+          <li >  overflow-y specifies what to do with the top/bottom edges of the content.</li>
+    </ul>
+   </p>
+   <p>By default, the overflow is visible, meaning that it is not clipped and it renders outside the element's box:</p>
+
+  <div id="ovflw1">You can use the overflow property when you want to have better control of the layout. 
+      The overflow property specifies what happens if content overflows an element's box.
+    
+    </div> 
+
+  <br><br><br><br> <br><br>
+
+    <div id="ovflw2">You can use the overflow property when you want to have better control of the layout. 
+        The overflow property specifies what happens if content overflows an element's box.
+       
+      </div> 
+  
+      <br><br><br><br> <br><br>
+
+      <div id="ovflw3">You can use the overflow property when you want to have better control of the layout. 
+          The overflow property specifies what happens if content overflows an element's box.
+         
+        </div> 
+
+        <br><br><br><br> <br><br>
+        <div id="ovflw4">You can use the overflow property when you want to have better control of the layout. 
+            The overflow property specifies what happens if content overflows an element's box.
+           
+          </div> 
+
+
+   <br>
+   <button class="button1">Green</button>
+   <P>Use the box-shadow property to add shadows to a button:</P>
+   <p>Use the opacity property to add transparency to a button (creates a "disabled" look).
+
+    Tip: You can also add the cursor property with a value of "not-allowed",
+     which will display a "no parking sign" when you mouse over the button:</p>
+
+
+    <br>
+    <button class="button2">Normal Button</button>
+   <button class="button2 disabled">Disabled Button</button>
+
+  <br>
+  
+   
+    </body>
+
+
+</html>

@@ -1,0 +1,293 @@
+
+*{
+    box-sizing: border-box;
+    
+}
+.container{
+    width: 100%;
+    padding: 0;
+    margin: 0px 10px;
+   
+}
+.logobaba img{
+    width: 20%;
+    display: block;
+    float: left;
+    margin-top: 2px;
+}
+
+header nav {
+    float: left;
+    
+}
+header nav h2{
+    height: 0;
+    margin: 0;
+    text-align: center;
+
+}
+header nav  li{
+    list-style-type: none;
+    float: left;    
+    margin: 20px ;
+    
+}
+
+header nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    text-shadow: 3px 3px 5px grey;
+}
+
+ /* this is for the popup menu of the login and signup page  */
+ .open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+  }
+  
+  /* The popup form - hidden by default */
+  .form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 1;
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+  }
+  
+  /* Full-width input fields */
+  .form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  /* When the inputs get focus, do something */
+  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit/login button */
+  .form-container .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color: red;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+/* Styling for the body  */
+
+.body-container{
+   width: 100%;
+   background-color: aqua;
+   margin: 0; 
+   padding: 0;
+   clear: both;
+
+}
+.col1{
+    float: left;
+    background-color: yellow;
+    width: 50%;
+    padding: 0;
+    margin: 0;
+}
+
+.col2{
+    float: right;
+    background-color: orange;
+    width: 50%;
+    padding: 0;
+    margin: 0;
+}
+
+/* Styling for the featured images  */
+
+
+
+.demoImg{
+    width: 33.33%;
+    height: auto;
+    float: left;
+    padding: 5px;
+    
+}
+.featured-images::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+footer{
+    display: block;
+    padding: 0  ;
+    background-color: #0404;
+}
+footer::after{
+    content: "";
+    clear: both;
+    display: block; 
+
+}
+
+footer ul {
+    float: left;
+    list-style-type: none;
+    margin: 4%;
+}
+
+footer ul li img{
+  width: 33.33%;
+}
+footer ul li a{
+    text-decoration: none;
+}
+
+ /* Now making it responsive, that's suitable for different screens */
+
+@media screen and (max-width:480px){
+
+    .logobaba img{
+        width: 90%;
+        align-items: center;
+    }
+    footer{
+        background-color:chartreuse;
+    }
+
+    footer ul {
+        width: 98%;
+        text-align: center;
+    }
+    
+    footer ul li img:hover{
+      width: 50%;
+    }
+    footer ul li a:hover{
+        font-size: 140%;
+        
+    }
+
+    /* now lets change the header also */
+
+    .logobaba{
+    
+       align-items: center;
+       
+    }
+    
+    
+    header nav {
+        clear: both;
+        float: none;
+        text-align: center ;
+       
+    }
+    header nav h2{
+        color: red;
+        font-style: italic;         
+    }
+    header nav  li{
+        width: 96%;
+       margin: 20px 2%;
+    }
+  /* now its time for content of the body to change  */
+ 
+  .col1,.col2{
+      background-color: aqua;
+  }
+ .col1{
+     width: 98%;
+     float: none;
+ }
+ 
+ .col2{
+     width: 98%;
+     float: none;
+    }
+   .body-container h3,p{
+       text-align: center;  
+ }
+    
+ /* now its time for the images  */
+
+ .demoImg{
+    width: 98%;
+    
+}
+.featured-images::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+} 
+ /* for the tables screen size  */
+
+ @media screen and (max-width: 768px ){
+
+      footer{
+        background-color :darkcyan;
+    }
+
+    footer ul {
+        width: 40%;
+        display: inline-block;
+        
+    }
+    
+    footer ul li img:hover{
+      width: 40%;
+    }
+    footer ul li a:hover{
+        font-size: 140%;
+        
+    }
+
+     /* now lets change the header also */
+     
+     .demoImg{
+        width: 25%;
+        
+    }
+    .featured-images::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+
+     
+ }
+    

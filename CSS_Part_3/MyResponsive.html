@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>me trying it.</title>
+
+    <link href="MyResponsive.css" rel="stylesheet" type="text/css">
+</head>
+<header>
+    <div class="container">
+        <h1 class="logobaba"><img src="https://cdn.idesignow.com/public_html/img/2012/02/restaurant-logo-design_2.jpg"
+                alt="logoImage"></h1>
+
+        <nav>
+            <h2>The MenuThing</h2>
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Orders</a></li>
+                <li><a href="#">PunjabiFood</a></li>
+                <li><a href="#">ItalicFood</a></li>
+                <li><a href="#">Help</a></li>
+
+
+                <button class="open-button" onclick="openForm()">Open Form</button>
+
+                <div class="form-popup" id="myForm">
+                    <form action="/action_page.php" class="form-container">
+                        <h1>Login</h1>
+
+                        <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Enter Email" name="email" required>
+
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+
+                        <button type="submit" class="btn">Login</button>
+                        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                    </form>
+                </div>
+
+                <script>
+                    function openForm() {
+                        document.getElementById("myForm").style.display = "block";
+                    }
+
+                    function closeForm() {
+                        document.getElementById("myForm").style.display = "none";
+                    }
+                </script>
+
+                <!-- <li> <a>loginit</a></li>
+                    <li><a>signmeUP</a></li> -->
+            </ul>
+
+        </nav>
+
+
+    </div>
+</header>
+
+<!--for the body tag-->
+
+<body>
+    <div class="body-container">
+        <div class="col1">
+            <h3>row1-of-col1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus iusto blanditiis voluptate quae odio
+                quasi, consectetur accusamus expedita esse adipisci hic laboriosam. Dolore, suscipit atque aspernatur
+                natus blanditiis distinctio similique.</p>
+            <h3>row2-of-col1</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque alias nesciunt labore, veniam ratione
+                architecto necessitatibus magni expedita, veritatis molestiae, pariatur aspernatur quidem iure
+                doloremque deleniti rem inventore aliquid numquam.</p>
+            <h3>row3-of-col1</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque alias nesciunt labore, veniam ratione
+                architecto necessitatibus magni expedita, veritatis molestiae, pariatur aspernatur quidem iure
+                doloremque deleniti rem inventore aliquid numquam.</p>
+
+        </div>
+
+        <div class="col2">
+            <h3>row1-of-col2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus iusto blanditiis voluptate quae odio
+                quasi, consectetur accusamus expedita esse adipisci hic laboriosam. Dolore, suscipit atque aspernatur
+                natus blanditiis distinctio similique.</p>
+            <h3>row2-of-col2</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque alias nesciunt labore, veniam ratione
+                architecto necessitatibus magni expedita, veritatis molestiae, pariatur aspernatur quidem iure
+                doloremque deleniti rem inventore aliquid numquam.</p>
+            <h3>row3-of-col2</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque alias nesciunt labore, veniam ratione
+                architecto necessitatibus magni expedita, veritatis molestiae, pariatur aspernatur quidem iure
+                doloremque deleniti rem inventore aliquid numquam.</p>
+
+        </div>
+        <br>
+        <div class="featured-images">
+            <div class="demoImg">
+                <img src="https://cdn.downtoearth.org.in/library/large/2019-05-31/0.68487000_1559290735_70-20190615-dte-english.jpg"
+                    alt="pic1" style="width: 100%;height: 100%;">
+
+            </div>
+
+            <div class="demoImg">
+                <img src="https://restaurantengine.com/wp-content/uploads/2013/12/Restaurant-Trends-Local-Foods-660x440.jpg
+                    " alt="pic1" style="width: 100%;height: 100%;">
+
+            </div>
+
+            <div class="demoImg">
+
+                <img src="https://www.hospibuz.com/wp-content/uploads/2020/03/HospiBuz_POKE-bowl-Candy-Green-compressor.jpg
+                    " alt="pic1" style="width: 100%;height: 100%;">
+
+            </div>
+
+            <div class="demoImg">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaivMx9JL8UmNuDsSY3isMtBBDc3UD0G6qXQ&usqp=CAU
+                    " alt="pic1" style="width: 100%; height: 100%;">
+
+            </div>
+        </div>
+</body>
+
+<footer>
+    <div class="footer-container">
+
+        <ul>
+            <li>New York Restaurant</li>
+            <li>3926 Anmoore Road</li>
+            <li>New York, NY 10014</li>
+            <li>718-749-1714</li>
+        </ul>
+
+        <ul>
+            <li>France Restaurant</li>
+            <li>68, rue da le Couronne</li>
+            <li>75002 PARIS</li>
+            <li>02.94.23.69.56</li>
+        </ul>
+
+        <ul>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Careers</a></li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+
+        <ul>
+            <li><img src="whatsapp.jpg" alt="logo"></li>
+            <li>&copy; All rights reserved 2015</li>
+
+        </ul>
+    </div>
+</footer>
+
+</html>

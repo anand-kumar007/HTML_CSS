@@ -1,0 +1,146 @@
+<html>
+
+<head>
+  <style>
+    .pagination {
+      display: inline-block;
+    }
+
+    .pagination2 {
+      display: inline-block;
+
+    }
+
+    .pagination2 a {
+      color: black;
+      float: left;
+      padding: 8px 16px;
+      text-decoration: none;
+      transition: background-color .3s;
+      border: 1px solid #ddd;
+    }
+
+
+
+    .pagination a {
+      color: black;
+      float: left;
+      padding: 8px 16px;
+      text-decoration: none;
+      /* for tranisition */
+      transition: background-color .2s;
+      /* for border */
+      border: 1px solid #ddd;
+      /* Gray */
+      /* if you want to keep them separate */
+      margin: 0 4px;
+      /* 0 is for top and bottom. */
+      /*for size */
+      font-size: 22px;
+      /* centered pagination */
+      text-align: center;
+
+    }
+
+    .pagination a.active {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .pagination a:hover:not(.active) {
+      background-color: #ddd;
+    }
+
+    #columns {
+      column-span: all;
+      /*species how much cols this element shoul span */
+    }
+
+    .colProperties {
+      column-count: 3;
+      column-gap: 40px;
+      /* for gap btwn columns */
+      column-rule-style: solid;
+      /* for separating them */
+      column-rule-width: 1px;
+      /* width of rule */
+      column-rule-color: lightblue;
+      /* column-rule: 1px solid lightblue; */
+    }
+
+
+    /* box-sizing and other properties are here */
+    .div1 {
+      width: 300px;
+      height: 100px;
+      border: 1px solid blue;
+      box-sizing: border-box;
+    }
+
+    .div2 {
+      width: 300px;
+      height: 100px;
+      padding: 50px;
+      border: 1px solid red;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Pagination</h1>
+  <div class="pagination">
+    <a href="#">&laquo;</a>
+    <a href="#">1</a>
+    <a href="#" class="active">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+    <a href="#">5</a>
+    <a href="#">6</a>
+    <a href="#">&raquo;</a>
+  </div>
+  <h1>Active and Hoverable Pagination</h1>
+  <p>Highlight the current page with an .active class,
+    and use the :hover selector to change the color of
+    each page link when moving the mouse over them:</p>
+
+  <p>
+
+    You can make use of this property to make navigation panel in start.
+    home about contact us and all.
+  </p>
+
+  <div class="pagination2">
+    <a href="#">❮</a>
+    <a href="#">❯</a>
+  </div>
+
+  <h1 id="columns">COLUMN PROPERTIES</h1>
+  <p class="colProperties">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+    Rerum adipisci nostrum, animi repellendus iusto qui aliquam obcaecati
+    deserunt sint quisquam soluta eaque quo aperiam assumenda? Consectetur
+    laborum impedit quaerat obcaecati.
+
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    Aut rem voluptatum dolore eveniet quas esse illum tenetur minima,
+    vel voluptates maxime veniam natus sunt qui, et perspiciatis asperiores laudantium commodi!
+  </p>
+
+  <br><br>
+  <h1>BOX SIZING </h1>
+  <p>The following illustration shows two
+  <div> elements with the same specified width and height:
+
+    This div is smaller (width is 300px and height is 100px).
+
+    This div is bigger (width is also 300px and height is 100px).
+
+    The two <div> elements above end up with different sizes in the result (because div2 has a padding specified):</p>
+      <div class="div1">Both divs are the same size now!</div>
+      <br>
+      <div class="div2">Hooray!</div>
+
+</body>
+
+</html>

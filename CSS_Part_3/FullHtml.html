@@ -1,0 +1,185 @@
+<!-- this is a course wherein we are going to learn about html and css  -->
+
+<! DOCTYPE>
+    <html>
+
+    <head>
+        <title>sam.com</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Domine&family=EB+Garamond&family=Hanalei+Fill&family=Pacifico&display=swap"
+            rel="stylesheet">
+        <style>
+            * {
+                font-family: 'Dancing Script', cursive;
+                font-family: 'Domine', serif;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1 style="color: white; background-color: rgb(38, 26, 218);  text-align: center;
+        padding: 10 0; text-transform: capitalize;">Welcome to my first Website</h1>
+
+        <h2 style="color: green;">This gives quick links to some of most commonly used sites.</h2>
+        <button>
+            <a href="https://www.youtube.com/" target="_blank" style=" text-decoration:none"
+                title="click to visit">YOUTUBE</a>
+        </button>
+        <br> <br>
+        <button>
+            <a href="https://web.whatsapp.com/" target="_blank" style="text-decoration: none;"
+                title="click to visit">WHATSAPP WEB</a>
+        </button>
+        <br> <br>
+        <button>
+            <a href="https://www.instagram.com/" target="_blank" style="text-decoration: none;"
+                title="click to visit">INSTAGRAM</a>
+        </button>
+        <br> <br>
+        <img src="images/sam.jpg" width="400" height="600" title="click to visit" alt="your photo">
+        <br> <br>
+        <br><br><br>
+        <center>
+            <table border="1" cellspacing="2" cellpadding="10" style="text-align: center;">
+                <tr>
+                    <th colspan="2">Name</th>
+                    <th>Branch</th>
+                    <th>Rollno</th>
+                    <th>Age(Years)</th>
+                </tr>
+                <tr>
+                    <td rowspan="2">Anand</td>
+                    <td>IT</td>
+                    <td>191IT104</td>
+                    <td>19</td>
+                </tr>
+                <tr>
+                    <td>Maria</td>
+                    <td>CS</td>
+                    <td>191CS124</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Maria</td>
+                    <td>CS</td>
+                    <td>191CS124</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Maria</td>
+                    <td>CS</td>
+                    <td>191CS124</td>
+                    <td>20</td>
+                </tr>
+
+            </table>
+        </center>
+
+        <br><br><br>
+        <!-- HTML Lists unoredered and ordered -->
+        <p>Shopping List</p>
+        <ul type="circle">
+            <li>Jeans</li>
+            <li>T-shirt</li>
+            <li>Shoes</li>
+            <li>Watch</li>
+            <li>Black Kurta</li>
+        </ul>
+        <ul type="square">
+            <li>Jeans</li>
+            <li>T-shirt</li>
+            <li>Shoes</li>
+            <li>Watch</li>
+            <li>Black Kurta</li>
+        </ul>
+        <br><br><br>
+        <p> Ordered list </p>
+        <ol>
+            <li>Anand</li>
+            <li>Bist</li>
+            <li>lisa</li>
+            <li>misika</li>
+        </ol>
+
+        <ol type="a">
+            <li>Anand</li>
+            <li>Bist</li>
+            <li>lisa</li>
+            <li>misika</li>
+        </ol>
+        <ol type="1" start="4">
+            <li>Anand</li>
+            <li>Bist</li>
+            <li>lisa</li>
+            <li>misika</li>
+        </ol>
+
+        <h3>SIGN IN PAGE</h3>
+        <form>
+            <label>Email:</label><br>
+            <input type="email" name="email"><br><br>
+
+            <label>password:</label><br>
+            <input type="Password" name="password"><br><br>
+
+        </form>
+        <br>
+        <h3>FB LOGIN</h3>
+        <form>
+            <label>Username:</label><br>
+            <input type="text" name="username"><br><br>
+
+            <label>password:</label><br>
+            <input type="Password" name="password"><br><br>
+
+        </form>
+        <select>
+            <option>Select Your Plan</option>
+            <option value="Business">Business</option>
+            <option value="Preminum">Premium</option>
+            <option value="Personal">Personal</option>
+        </select>
+        <br><br>
+        <textarea cols="40" rows="5">
+    </textarea>
+        <br>
+        <p>Select Your Gender</p>
+        <!-- as name is same for both input type so we can select only one at a time in radio-->
+        <input type="radio" name="ppp">Male
+        <input type="radio" name="ppp">Female
+
+        <br>
+        <p>Read all the Instructions Carefully</p>
+        <input type="checkbox" name=""> Yes, I have read it carefully
+        <br><br>
+        <input type="submit" name="submit" value="Login">
+        <br><br>
+        Hello Guys this is Anand and I am an Engineering Student.
+        I am currently studying in 2<sup>nd</sup> year of Information Technology at <b>National Institute Of Technology
+            Karnataka.</b>
+        </p>
+
+        <p> (i) This is a physical tag which is used to make text <i>italic.</i>
+
+            <br> (strong) This is a logical tag, which tells the browser that the <strong>text is important.</strong>
+            </br>
+            (em) This is a logical tag which is used to display content in <em>italic.</em>
+
+            <br>(mark) This tag is used to <mark>highlight text.</mark></br>
+            (u) This tag is used to underline text written between it.
+
+            <br>(tt)This tag is used to appear a text in <tt>teletype. (not supported in HTML5)</tt></br>
+            (strike)This tag is used to draw a <strike>strikethrough</strike> on a section of text. (Not supported in
+            HTML5).
+
+            <br>(del)This tag is used to display the <del>deleted content</del></br>
+            (sup) It displays the content slightly above the <sup>normal</sup> line.
+            (sub) It displays the content slightly below the <sub>normal</sub> line.
+
+            <br> (ins) This tag displays the <ins>content which is added</ins> </br>
+            (big)This tag is used to increase the font size by <big>one conventional unit.</big>
+        </p>
+    </body>
+
+    </html>

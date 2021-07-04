@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Image Slider </title>
+    <style>
+        body {
+            background-color: rgba(27, 31, 34, 0.85);
+        }
+
+        h1 {
+            font-size: 2.1rem;
+            line-height: 1.4;
+            letter-spacing: 0.3rem;
+            text-align: center;
+            margin-top: 50px;
+            color: white;
+        }
+
+        .maindiv {
+            width: 70%;
+            height: 400px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            'https://images.freeimages.com/images/large-previews/867/volcanic-mt-ngauruhoe-1378772.jpg'
+            background-image: url();
+            background-size: 100% 100%;
+
+            box-shadow: 1px 2px 10px 5px white;
+            animation: Slider 25s infinite linear;
+        }
+
+        @keyframes Slider {
+            0% {
+                background-image: url('https://images.freeimages.com/images/large-previews/867/volcanic-mt-ngauruhoe-1378772.jpg');
+            }
+
+            20% {
+                background-image: url('https://images.freeimages.com/images/large-previews/5b8/starfish-1377326.jpg');
+            }
+
+            40% {
+                background-image: url('https://images.freeimages.com/images/large-previews/1d3/thanksgiving-table-1443940.jpg');
+            }
+
+            60% {
+                background-image: url('https://images.freeimages.com/images/large-previews/f7e/pastry-dish-1514928.jpg');
+            }
+
+            80% {
+                background-image: url('https://images.freeimages.com/images/large-previews/e0c/hawaiin-sunset-1368289.jpg');
+            }
+
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>GOOD MORNING :-)</h1>
+    <div class="maindiv">
+
+    </div>
+
+</body>
+
+</html>
