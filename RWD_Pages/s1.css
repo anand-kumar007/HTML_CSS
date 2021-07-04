@@ -1,0 +1,111 @@
+
+*{
+  margin : 0;
+  padding : 0;
+  box-sizing: border-box;
+}
+a {
+   text-decoration: none;
+ }
+
+#header
+{
+  text-align: center;
+  padding: 2.5rem;
+  border: 2px solid rgba(202, 10, 10, 0.4);
+  background: rgba(232, 122, 122, 0.7);
+}
+
+/* style the navbar */
+#navbar{
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.4) ;
+}
+#navbar a {
+    display : block;
+    float: left;
+    padding: 1rem;  
+    color: #ffffff;
+    font-size: 1.3rem;
+}
+#navbar a:hover{
+   background : green;
+   text-decoration: underline;
+}
+
+/* content styling  */
+/* three equal columns for the  */
+
+.cols{
+float: left;
+/* width: 33.33%; */
+padding: 1rem;
+
+}
+/* if unequal columns */
+
+/* Left and right column */
+.cols.side {
+  width: 25%;
+
+}
+
+/* Middle column */
+.cols.middle {
+  width: 50%;
+ 
+}
+
+/* clear the float after the cols */
+.container::after
+{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h2 + p
+{
+ margin-top: 1rem;
+}
+
+/* make the layout reponsive */
+@media  screen and (max-width : 540px) {
+  .cols.side,.cols.middle{
+        width: 100%;
+  }
+  #navbar a 
+  {
+    display: block;
+    float: none;
+    
+  }
+  .footer a
+  {
+    display: block;
+    margin-top: 1rem;
+    color: red;
+  }
+}
+
+/* footer styling */
+
+.footer 
+{
+background-color: rgb(228, 233, 236);
+text-align: center;
+padding: 2rem;
+margin: 0.5rem;
+word-spacing: 1rem;
+font-size: 1.2rem;
+}
+
+.footer:hover 
+{
+  box-shadow: 10px 10px  1px rgb(160, 163, 165);
+}
+.footer a:hover 
+{
+  color: red;
+  font-size: 1.3rem;
+}

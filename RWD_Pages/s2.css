@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: cursive;
+    padding: 0.7rem;
+    background-color: #f1e7e7;
+}
+
+/* header styling */
+.header{
+    text-align: center;
+    padding: 2rem;
+    /* optional */
+    box-shadow: 10px 10px 3px #dfd2d2;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #663b3b;
+    /* optional */
+    margin-top: 0.5rem;
+    box-shadow:  10px 10px 3px #aa9090;
+}
+.navbar a
+{
+    float: left;
+    display: block;
+    padding: 1rem;
+    /* optional */
+    color: #f1e7e7;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    background-color: blue;    
+}
+
+/* main content styling now */
+
+.rightcols
+{
+    width: 75%;
+    float: left;
+}
+.leftcols{
+    width: 25%;
+    float: left;
+}
+
+.card{
+    background-color: #ffffff;
+    box-shadow: 5px 5px 3px #d4d1d1 ;
+    margin: 0.8rem;
+    padding: 2rem;
+    
+}
+
+.card img {
+    width: 80%;
+    max-height: 20rem;
+    margin: 2rem 1rem 2rem;
+}
+
+/* clear the flots after the cols */
+.container::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* media queries */
+
+
+/* Responsive layout - when the screen is less than 800px wide, 
+make the two columns stack on top of each other instead of 
+next to each other */
+
+@media screen and (max-width: 800px) {
+  .leftcols, .rightcols {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width : 540px) {
+    
+    .navbar a 
+    {
+       float: none;
+       text-align: center;
+    }
+    .card img 
+    {
+        max-width: 100%;
+    }
+    .footer a
+    {
+        display: block;
+        text-align: center;
+    }
+    
+}
+
+/* footer design */
+.footer 
+{
+  padding: 1.4rem;
+  text-align: center;
+  background: #ddd;
+  margin-top: 1rem;
+
+}
+
+.footer a 
+{
+    margin: 1rem;
+  text-decoration: none;
+}
